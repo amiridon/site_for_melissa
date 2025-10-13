@@ -43,11 +43,8 @@ jobs:
             rm -rf src/app/api;
           fi
 
-      - name: Build (Next.js)
+      - name: Build (Next.js static export)
         run: npm run build
-
-      - name: Static Export
-        run: npm run export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
