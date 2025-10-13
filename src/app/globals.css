@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default theme: Dark */
+:root,
+:root:not([data-theme]),
+[data-theme="dark"] {
+  /* neutrals (dark base) */
+  --bg-dark: 0 0% 0%;
+  --bg: 0 0% 5%;
+  --bg-light: 0 0% 10%;
+  --text: 0 0% 95%;
+  --text-muted: 0 0% 70%;
+  --border: 0 0% 20%;
+
+  /* Theme-specific accent colors - Dark Mode: Cool tones */
+  --accent-primary: 168 42% 35%;
+  /* Darker Tiffany Blue - cool primary */
+  --accent-primary-hover: 168 42% 42%;
+  /* Lighter tiffany on hover */
+  --accent-primary-pressed: 168 42% 28%;
+  /* Darker when pressed */
+  --accent-primary-fg: 0 0% 95%;
+  /* White text on accent */
+  --accent-primary-fg-dim: 0 0% 75%;
+  /* Dimmed text for base state */
+
+  --accent-secondary: 195 67% 30%;
+  /* Paynes Gray - cool secondary */
+  --accent-secondary-hover: 195 67% 38%;
+  /* Lighter paynes on hover */
+  --accent-secondary-pressed: 195 67% 22%;
+  /* Darker when pressed */
+  --accent-secondary-fg: 0 0% 95%;
+  /* White text on accent */
+  --accent-secondary-fg-dim: 0 0% 75%;
+  /* Dimmed text for base state */
+
+  /* Brand colors for consistency */
+  --brand: var(--accent-primary);
+  --brand-hover: var(--accent-primary-hover);
+  --brand-pressed: var(--accent-primary-pressed);
+  --brand-fg: var(--accent-primary-fg);
+  --brand-fg-dim: var(--accent-primary-fg-dim);
+
+  --brand-soft: var(--accent-secondary);
+  --brand-soft-hover: var(--accent-secondary-hover);
+  --brand-soft-pressed: var(--accent-secondary-pressed);
+
+  /* semantic colors in HSL */
+  --success: 145 60% 45%;
+  /* Green success */
+  --warning: 45 75% 55%;
+  /* Yellow warning */
+  --danger: 0 70% 50%;
+  /* Red danger */
+
+  /* shadows - paired for depth */
+  --shadow-s:
+    inset 0 1px 2px hsla(0, 0%, 100%, 0.25),
+    0 1px 2px hsla(0, 0%, 0%, 0.18),
+    0 2px 6px hsla(0, 0%, 0%, 0.10);
+  --shadow-m:
+    inset 0 1px 2px hsla(0, 0%, 100%, 0.35),
+    0 2px 4px hsla(0, 0%, 0%, 0.22),
+    0 4px 12px hsla(0, 0%, 0%, 0.12);
+  --shadow-l:
+    inset 0 1px 2px hsla(0, 0%, 100%, 0.45),
+    0 4px 8px hsla(0, 0%, 0%, 0.24),
+    0 8px 24px hsla(0, 0%, 0%, 0.14);
+
+  /* gradients & highlights for glossy effects */
+  --highlight: 0 0% 16%;
+  --surface-gradient: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 5%) 100%);
+  --surface-gradient-hover: linear-gradient(180deg, hsl(0 0% 5%) 0%, hsl(0 0% 10%) 100%);
+}
+
+[data-theme="light"] {
+  /* neutrals (light base) */
+  --bg-dark: 21 35% 92%;
+  /* Isabelline - warm cream background */
+  --bg: 21 25% 95%;
+  /* Lighter warm background */
+  --bg-light: 0 0% 100%;
+  /* Pure white for cards */
+  --text: 0 0% 5%;
+  /* Almost black text */
+  --text-muted: 0 0% 30%;
+  /* Dark gray muted text */
+  --border: 0 0% 85%;
+  /* Light borders */
+  --highlight: 0 0% 100%;
+  /* White highlights */
+  --surface-gradient: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 95%) 100%);
+  --surface-gradient-hover: linear-gradient(180deg, hsl(0 0% 95%) 0%, hsl(0 0% 100%) 100%);
+
+  /* Theme-specific accent colors - Light Mode: Warm tones */
+  --accent-primary: 335 71% 64%;
+  /* Thulian Pink - warm primary */
+  --accent-primary-hover: 335 71% 68%;
+  /* Lighter pink on hover */
+  --accent-primary-pressed: 335 71% 58%;
+  /* Darker when pressed */
+  --accent-primary-fg: 0 0% 100%;
+  /* White text on accent */
+  --accent-primary-fg-dim: 0 0% 85%;
+  /* Dimmed text for base state */
+
+  --accent-secondary: 310 68% 21%;
+  /* Palatinate - warm secondary */
+  --accent-secondary-hover: 310 68% 28%;
+  /* Lighter palatinate on hover */
+  --accent-secondary-pressed: 310 68% 16%;
+  /* Darker when pressed */
+  --accent-secondary-fg: 0 0% 100%;
+  /* White text on accent */
+  --accent-secondary-fg-dim: 0 0% 85%;
+  /* Dimmed text for base state */
+
+  /* Brand colors for consistency */
+  --brand: var(--accent-primary);
+  --brand-hover: var(--accent-primary-hover);
+  --brand-pressed: var(--accent-primary-pressed);
+  --brand-fg: var(--accent-primary-fg);
+  --brand-fg-dim: var(--accent-primary-fg-dim);
+
+  --brand-soft: var(--accent-secondary);
+  --brand-soft-hover: var(--accent-secondary-hover);
+  --brand-soft-pressed: var(--accent-secondary-pressed);
+}
+
+/* Colors are now defined in tailwind.config.ts */
+
+body {
+  background-color: hsl(var(--bg-dark));
+  color: hsl(var(--text-muted));
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100dvh;
+}
+
+/* Depth and surface utility classes */
+.bg-surface {
+  background-image: var(--surface-gradient);
+  background-color: hsl(var(--bg));
+}
+
+.bg-surface-hover:hover {
+  background-image: var(--surface-gradient-hover);
+}
+
+/* Interactive depth - cards that lift on hover */
+.card-interactive {
+  transition: all 0.3s ease;
+}
+
+.card-interactive:hover {
+  background-image: var(--surface-gradient-hover);
+  box-shadow: var(--shadow-m);
+  transform: translateY(-2px);
+}
+
+/* Border utilities for depth */
+.border-card {
+  border: 1px solid hsl(var(--border));
+}
+
+.border-highlight {
+  border-color: hsl(var(--highlight));
+}
+
+/* Additional background levels for hierarchy */
+.bg-elevated {
+  background-color: hsl(var(--bg-light));
+  background-image: var(--surface-gradient);
+}
+
+/* Test classes to verify color system */
+.test-brand-bg {
+  background-color: hsl(240 75% 50%) !important;
+  color: white !important;
+}
+
+.test-brand-text {
+  color: hsl(240 75% 50%) !important;
+}
