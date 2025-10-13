@@ -113,8 +113,8 @@ export default function AboutPage() {
                 </div>
                 <div className="p-6 bg-bg">
                   <p className="text-xs text-muted text-center italic">
-                    "Excellence is not a destination; it's a continuous journey of 
-                    improvement and dedication to those we serve."
+                    &quot;Excellence is not a destination; it&apos;s a continuous journey of 
+                    improvement and dedication to those we serve.&quot;
                   </p>
                   <p className="text-xs text-brand text-center mt-2 font-medium">
                     — Melissa Chatters-Rosario

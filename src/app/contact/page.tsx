@@ -16,8 +16,8 @@ export default function Contact() {
             Get in <span className="text-brand">Touch</span>
           </h1>
           <p className="mt-6 text-xl text-muted max-w-3xl mx-auto">
-            Whether you're seeking full-time management or discrete project oversight, 
-            Melissa welcomes the opportunity to discuss your estate's unique needs.
+            Whether you&apos;re seeking full-time management or discrete project oversight, 
+            Melissa welcomes the opportunity to discuss your estate&apos;s unique needs.
           </p>
         </div>
 
@@ -175,7 +175,7 @@ export default function Contact() {
               
               <p className="text-muted max-w-2xl mx-auto">
                 Experience the peace of mind that comes with professional estate management. 
-                Let's discuss how we can enhance your property's operations and your lifestyle.
+                Let&apos;s discuss how we can enhance your property&apos;s operations and your lifestyle.
               </p>
             </div>
           </div>

@@ -42,7 +42,7 @@ export default function Introduction() {
               {/* Quote or caption */}
               <blockquote className="mt-6 text-center">
                 <p className="text-muted italic">
-                  "True luxury is peace of mind — when every detail is handled before you think to ask."
+                  &quot;True luxury is peace of mind — when every detail is handled before you think to ask.&quot;
                 </p>
               </blockquote>
             </div>

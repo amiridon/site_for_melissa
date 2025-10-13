@@ -183,8 +183,8 @@ export default function ServicesPage() {
                 Ready to Elevate Your Estate Management?
               </h2>
               <p className="text-muted mb-8 max-w-2xl mx-auto">
-                Let's discuss how our comprehensive services can be tailored 
-                to meet your estate's unique needs and your lifestyle preferences.
+                Let&apos;s discuss how our comprehensive services can be tailored 
+                to meet your estate&apos;s unique needs and your lifestyle preferences.
               </p>
               
               <a 
