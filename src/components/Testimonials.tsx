@@ -7,7 +7,7 @@ export default function Testimonials() {
       <div className="relative mx-auto max-w-4xl text-center">
         {/* Philosophy quote */}
         <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-medium text-text leading-relaxed">
-          "True luxury is peace of mind — when every detail is handled before you think to ask."
+          &quot;True luxury is peace of mind — when every detail is handled before you think to ask.&quot;
         </blockquote>
         
         {/* Attribution */}
