@@ -41,36 +41,17 @@ export default function Contact() {
                   <div>
                     <p className="text-muted text-sm">Email</p>
                     <a 
-                      href="mailto:mchatters@msn.com"
+                      href="mailto:melissa@estateeasemgmt.com"
                       className="text-text font-medium hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand/40 focus:ring-offset-2 focus:ring-offset-bg rounded"
                     >
-                      mchatters@msn.com
+                      melissa@estateeasemgmt.com
                     </a>
                   </div>
                 </div>
                 
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-lg bg-brand/10 text-brand flex items-center justify-center mr-4">
-                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} 
-                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-muted text-sm">LinkedIn</p>
-                    <a 
-                      href="#" 
-                      className="text-text font-medium hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand/40 focus:ring-offset-2 focus:ring-offset-bg rounded"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Professional Profile
-                    </a>
-                  </div>
                 </div>
               </div>
-            </div>
-
+            
             {/* Response Time Card */}
             <div className="rounded-2xl bg-bg border border-card shadow-s bg-[image:var(--surface-gradient)] p-6">
               <h3 className="text-xl font-semibold text-text mb-4">
