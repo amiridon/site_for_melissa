@@ -26,11 +26,11 @@
   --accent-primary-fg-dim: 0 0% 75%;
   /* Dimmed text for base state */
 
-  --accent-secondary: 66 38% 64%;
-  /* Sage - warm earthy secondary */
-  --accent-secondary-hover: 66 38% 70%;
+  --accent-secondary: 66 38% 50%;
+  /* Sage - warm earthy secondary (darkened for better contrast) */
+  --accent-secondary-hover: 66 38% 58%;
   /* Lighter sage on hover */
-  --accent-secondary-pressed: 66 38% 58%;
+  --accent-secondary-pressed: 66 38% 44%;
   /* Darker when pressed */
   --accent-secondary-fg: 0 0% 10%;
   /* Dark text on light sage */
