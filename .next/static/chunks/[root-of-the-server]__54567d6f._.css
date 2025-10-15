@@ -455,24 +455,9 @@ img, video {
   z-index: 50;
 }
 
-.-mx-12 {
-  margin-left: -3rem;
-  margin-right: -3rem;
-}
-
 .-mx-2 {
   margin-left: -.5rem;
   margin-right: -.5rem;
-}
-
-.-mx-6 {
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
-.-mx-8 {
-  margin-left: -2rem;
-  margin-right: -2rem;
 }
 
 .-my-1 {
@@ -483,18 +468,6 @@ img, video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.-mt-12 {
-  margin-top: -3rem;
-}
-
-.-mt-6 {
-  margin-top: -1.5rem;
-}
-
-.-mt-8 {
-  margin-top: -2rem;
 }
 
 .mb-12 {
@@ -881,11 +854,6 @@ img, video {
   border-bottom-left-radius: .25rem;
 }
 
-.rounded-t-2xl {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -917,23 +885,13 @@ img, video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
-.border-highlight {
+.border-gray-300 {
   --tw-border-opacity: 1;
-  border-color: hsl(var(--highlight) / var(--tw-border-opacity));
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
 .border-success\/20 {
   border-color: hsl(var(--success) / .2);
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgba(75, 85, 99, var(--tw-border-opacity));
-}
-
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
 .bg-bg {
@@ -1237,6 +1195,10 @@ img, video {
   color: hsl(var(--brand-soft) / var(--tw-text-opacity));
 }
 
+.text-brandSoft\/80 {
+  color: hsl(var(--brand-soft) / .8);
+}
+
 .text-danger {
   --tw-text-opacity: 1;
   color: hsl(var(--danger) / var(--tw-text-opacity));
@@ -1247,10 +1209,6 @@ img, video {
   color: hsl(var(--text-muted) / var(--tw-text-opacity));
 }
 
-.text-muted\/80 {
-  color: hsl(var(--text-muted) / .8);
-}
-
 .text-success {
   --tw-text-opacity: 1;
   color: hsl(var(--success) / var(--tw-text-opacity));
@@ -1259,10 +1217,6 @@ img, video {
 .text-text {
   --tw-text-opacity: 1;
   color: hsl(var(--text) / var(--tw-text-opacity));
-}
-
-.text-brandSoft\/80 {
-  color: hsl(var(--brand-soft) / .8);
 }
 
 .antialiased {
@@ -1367,16 +1321,16 @@ img, video {
   --text: 0 0% 95%;
   --text-muted: 0 0% 70%;
   --border: 0 0% 20%;
-  --accent-primary: 168 42% 35%;
-  --accent-primary-hover: 168 42% 42%;
-  --accent-primary-pressed: 168 42% 28%;
+  --accent-primary: 211 39% 31%;
+  --accent-primary-hover: 211 39% 38%;
+  --accent-primary-pressed: 211 39% 24%;
   --accent-primary-fg: 0 0% 95%;
   --accent-primary-fg-dim: 0 0% 75%;
-  --accent-secondary: 195 67% 30%;
-  --accent-secondary-hover: 195 67% 38%;
-  --accent-secondary-pressed: 195 67% 22%;
-  --accent-secondary-fg: 0 0% 95%;
-  --accent-secondary-fg-dim: 0 0% 75%;
+  --accent-secondary: 66 38% 64%;
+  --accent-secondary-hover: 66 38% 70%;
+  --accent-secondary-pressed: 66 38% 58%;
+  --accent-secondary-fg: 0 0% 10%;
+  --accent-secondary-fg-dim: 0 0% 25%;
   --brand: var(--accent-primary);
   --brand-hover: var(--accent-primary-hover);
   --brand-pressed: var(--accent-primary-pressed);
@@ -1397,25 +1351,25 @@ img, video {
 }
 
 [data-theme="light"] {
-  --bg-dark: 21 35% 92%;
-  --bg: 21 25% 95%;
+  --bg-dark: 0 0% 92%;
+  --bg: 0 0% 96%;
   --bg-light: 0 0% 100%;
   --text: 0 0% 5%;
   --text-muted: 0 0% 30%;
   --border: 0 0% 85%;
   --highlight: 0 0% 100%;
-  --surface-gradient: linear-gradient(180deg, #fff 0%, #f2f2f2 100%);
-  --surface-gradient-hover: linear-gradient(180deg, #f2f2f2 0%, #fff 100%);
-  --accent-primary: 335 71% 64%;
-  --accent-primary-hover: 335 71% 68%;
-  --accent-primary-pressed: 335 71% 58%;
-  --accent-primary-fg: 0 0% 100%;
-  --accent-primary-fg-dim: 0 0% 85%;
-  --accent-secondary: 310 68% 21%;
-  --accent-secondary-hover: 310 68% 28%;
-  --accent-secondary-pressed: 310 68% 16%;
-  --accent-secondary-fg: 0 0% 100%;
-  --accent-secondary-fg-dim: 0 0% 85%;
+  --surface-gradient: linear-gradient(180deg, #fff 0%, #f5f5f5 100%);
+  --surface-gradient-hover: linear-gradient(180deg, #f5f5f5 0%, #fff 100%);
+  --accent-primary: 230 64% 91%;
+  --accent-primary-hover: 230 64% 94%;
+  --accent-primary-pressed: 230 64% 86%;
+  --accent-primary-fg: 222 16% 25%;
+  --accent-primary-fg-dim: 222 16% 39%;
+  --accent-secondary: 200 35% 72%;
+  --accent-secondary-hover: 200 35% 78%;
+  --accent-secondary-pressed: 200 35% 66%;
+  --accent-secondary-fg: 222 16% 25%;
+  --accent-secondary-fg-dim: 222 16% 39%;
   --brand: var(--accent-primary);
   --brand-hover: var(--accent-primary-hover);
   --brand-pressed: var(--accent-primary-pressed);
@@ -1652,19 +1606,6 @@ body {
 @media (min-width: 1024px) {
   .lg\:order-first {
     order: -9999;
-  }
-
-  .lg\:-mx-12 {
-    margin-left: -3rem;
-    margin-right: -3rem;
-  }
-
-  .lg\:-mt-12 {
-    margin-top: -3rem;
-  }
-
-  .lg\:mb-12 {
-    margin-bottom: 3rem;
   }
 
   .lg\:grid-cols-2 {
