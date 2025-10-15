@@ -8,7 +8,10 @@ export default function Header() {
   const pathname = usePathname();
 
   const getLinkClasses = (href: string) => {
-    const isActive = pathname === href;
+    // Normalize both pathname and href to handle trailing slashes
+    const normalizedPathname = pathname.endsWith('/') && pathname !== '/' ? pathname.slice(0, -1) : pathname;
+    const normalizedHref = href.endsWith('/') && href !== '/' ? href.slice(0, -1) : href;
+    const isActive = normalizedPathname === normalizedHref;
     const baseClasses = "px-4 py-3 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-brand/40 transition-all duration-200 shadow-sm hover:shadow-md";
     
     if (isActive) {
