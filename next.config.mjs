@@ -9,16 +9,16 @@ const repo = 'site_for_melissa';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: { unoptimized: true },
-  trailingSlash: true,
-  // Only set these when building on GitHub Actions so local dev remains unchanged
-  ...(isGitHubActions
-    ? {
-        basePath: `/${repo}`,
-        assetPrefix: `https://amiridon.github.io/${repo}`,
-      }
-    : {}),
+    output: 'export',
+    images: { unoptimized: true },
+    trailingSlash: true,
+    // Only set these when building on GitHub Actions so local dev remains unchanged
+    ...(isGitHubActions
+        ? {
+            basePath: `/${repo}`,
+            assetPrefix: `https://amiridon.github.io/${repo}`,
+        }
+        : {}),
 };
 
 export default nextConfig;

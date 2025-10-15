@@ -14,27 +14,27 @@
   --text-muted: 0 0% 70%;
   --border: 0 0% 20%;
 
-  /* Theme-specific accent colors - Dark Mode: Cool tones */
-  --accent-primary: 168 42% 35%;
-  /* Darker Tiffany Blue - cool primary */
-  --accent-primary-hover: 168 42% 42%;
-  /* Lighter tiffany on hover */
-  --accent-primary-pressed: 168 42% 28%;
+  /* Theme-specific accent colors - Dark Mode: Cool blue tones */
+  --accent-primary: 211 39% 31%;
+  /* YinMn Blue - cool primary */
+  --accent-primary-hover: 211 39% 38%;
+  /* Lighter YinMn on hover */
+  --accent-primary-pressed: 211 39% 24%;
   /* Darker when pressed */
   --accent-primary-fg: 0 0% 95%;
   /* White text on accent */
   --accent-primary-fg-dim: 0 0% 75%;
   /* Dimmed text for base state */
 
-  --accent-secondary: 195 67% 30%;
-  /* Paynes Gray - cool secondary */
-  --accent-secondary-hover: 195 67% 38%;
-  /* Lighter paynes on hover */
-  --accent-secondary-pressed: 195 67% 22%;
+  --accent-secondary: 66 38% 64%;
+  /* Sage - warm earthy secondary */
+  --accent-secondary-hover: 66 38% 70%;
+  /* Lighter sage on hover */
+  --accent-secondary-pressed: 66 38% 58%;
   /* Darker when pressed */
-  --accent-secondary-fg: 0 0% 95%;
-  /* White text on accent */
-  --accent-secondary-fg-dim: 0 0% 75%;
+  --accent-secondary-fg: 0 0% 10%;
+  /* Dark text on light sage */
+  --accent-secondary-fg-dim: 0 0% 25%;
   /* Dimmed text for base state */
 
   /* Brand colors for consistency */
@@ -95,28 +95,28 @@
   --surface-gradient: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 95%) 100%);
   --surface-gradient-hover: linear-gradient(180deg, hsl(0 0% 95%) 0%, hsl(0 0% 100%) 100%);
 
-  /* Theme-specific accent colors - Light Mode: Warm tones */
-  --accent-primary: 335 71% 64%;
-  /* Thulian Pink - warm primary */
-  --accent-primary-hover: 335 71% 68%;
-  /* Lighter pink on hover */
-  --accent-primary-pressed: 335 71% 58%;
+  /* Theme-specific accent colors - Light Mode: Lavender & Powder Blue */
+  --accent-primary: 230 64% 91%;
+  /* Lavender Web - soft elegant primary */
+  --accent-primary-hover: 230 64% 94%;
+  /* Lighter lavender on hover */
+  --accent-primary-pressed: 230 64% 86%;
   /* Darker when pressed */
-  --accent-primary-fg: 0 0% 100%;
-  /* White text on accent */
-  --accent-primary-fg-dim: 0 0% 85%;
-  /* Dimmed text for base state */
+  --accent-primary-fg: 222 16% 25%;
+  /* Dark text on light lavender */
+  --accent-primary-fg-dim: 222 16% 39%;
+  /* Paynes Gray text for readability */
 
-  --accent-secondary: 310 68% 21%;
-  /* Palatinate - warm secondary */
-  --accent-secondary-hover: 310 68% 28%;
-  /* Lighter palatinate on hover */
-  --accent-secondary-pressed: 310 68% 16%;
+  --accent-secondary: 200 35% 72%;
+  /* Powder Blue - soft secondary */
+  --accent-secondary-hover: 200 35% 78%;
+  /* Lighter powder blue on hover */
+  --accent-secondary-pressed: 200 35% 66%;
   /* Darker when pressed */
-  --accent-secondary-fg: 0 0% 100%;
-  /* White text on accent */
-  --accent-secondary-fg-dim: 0 0% 85%;
-  /* Dimmed text for base state */
+  --accent-secondary-fg: 222 16% 25%;
+  /* Dark text on light powder blue */
+  --accent-secondary-fg-dim: 222 16% 39%;
+  /* Paynes Gray for dimmed text */
 
   /* Brand colors for consistency */
   --brand: var(--accent-primary);
