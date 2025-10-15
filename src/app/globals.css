@@ -107,16 +107,16 @@
   --accent-primary-fg-dim: 0 0% 95%;
   /* Light text for readability */
 
-  --accent-secondary: 200 35% 72%;
-  /* Powder Blue - soft secondary */
-  --accent-secondary-hover: 200 35% 78%;
-  /* Lighter powder blue on hover */
-  --accent-secondary-pressed: 200 35% 66%;
+  --accent-secondary: 66 38% 35%;
+  /* Sage (darker for light mode) - better contrast */
+  --accent-secondary-hover: 66 38% 42%;
+  /* Lighter sage on hover */
+  --accent-secondary-pressed: 66 38% 28%;
   /* Darker when pressed */
-  --accent-secondary-fg: 222 16% 25%;
-  /* Dark text on light powder blue */
-  --accent-secondary-fg-dim: 222 16% 39%;
-  /* Paynes Gray for dimmed text */
+  --accent-secondary-fg: 0 0% 100%;
+  /* White text on dark sage */
+  --accent-secondary-fg-dim: 0 0% 95%;
+  /* Light text for buttons */
 
   /* Brand colors for consistency */
   --brand: var(--accent-primary);
